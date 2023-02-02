@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            3 column preview card component
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background:  hsl(0, 0%, 95%);
+            }
+            .container {
+                display: flex;
+                width: 800px;
+                height: 400px;
+                font-family: Lexend Deca, sans-serif;
+                
+            }
+            .colomn1 {
+                background-color:hsl(31, 77%, 52%) ;
+                padding: 40px;
+                border-radius: 7px 0 0 7px;
+            }
+            .colomn2 {
+                background-color:hsl(184, 100%, 22%);
+                padding: 40px;
+            }
+            .colomn3 {
+                background-color:hsl(179, 100%, 13%);
+                padding: 40px;
+                border-radius: 0 7px 7px 0;
+            }
+            .brand {
+                font-size: 25px;
+                margin-top: 20px;
+                color:  hsl(0, 0%, 95%);
+                font-family: Big Shoulders Display, sans-serif;
+            }
+            .remarks {
+                margin-top: 25px;
+                line-height: 20px;
+                margin-bottom: 70px;
+                color: hsla(0, 0%, 100%, 0.75);
+                font-size: 10px;
+                font-weight: 400;
+            }
+            button{
+                padding: 10px 25px 10px 25px;
+                border-radius: 20px;
+                border: none;
+                background-color: hsl(0, 0%, 95%);
+                font-family: Lexend Deca, sans-serif;
+                font-size: 10px;
+            }
+            .colomn1 button {
+                color: hsl(31, 77%, 52%) ;
+            }
+            .colomn2 button {
+                color: hsl(184, 100%, 22%);;
+            } 
+        .colomn3 button {
+            color: hsl(179, 100%, 13%);;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="colomn1">
+                <img src="images/images/icon-sedans.svg" alt="">
+                <div class="brand">
+                 SEDANS
+                </div> 
+                <div class="remarks">
+                 Choose a sedan for its affodability and excellent
+                 fuel economy&#46; Ideal for cruising in the city
+                 or on your next road trip&#46;
+                </div>
+                <button>Learn More</button>
+             </div>
+             <div class="colomn2">
+                <img src="images/images/icon-suvs.svg" alt="">
+                <div class="brand">
+                 SUVS
+                </div> 
+                <div class="remarks">
+                    Take an SUV for its spacious interior&#44; power&#44; 
+                    and versatililty&#46; Perfect for your next family
+                    vacation and off&#8208;road adventures&#46;
+                </div>
+                <button>Learn More</button>
+             </div>
+             <div class="colomn3">
+                <img src="images/images/icon-luxury.svg" alt="">
+                <div class="brand">
+                 LUXURY
+                </div> 
+                <div class="remarks">
+                 Cruise in the best car brands without the bloated prices&#46;
+                 Enjoy the enhanced comfort of a luxury rental and arrive
+                 in style&#46;
+                </div>
+                <button>Learn More</button>
+             </div>
+        </div>
+    </body>
+</html>

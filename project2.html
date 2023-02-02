@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+        <title>
+            project 2
+        </title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                font-family: poppins, sans-serif;
+            }
+            .container {
+                text-align: center;
+                box-shadow:  0px 0px 5px rgba(129, 129, 129, 0.4) ;
+                border-radius: 10px;
+            
+            }
+            .upper {
+                position: relative;
+                height: 100px;
+                background: indigo;
+                border-radius: 12px 12px 0 0;
+
+            }
+            .upper img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+            .lower {
+                margin-top: 60px;
+                padding: 0 10px 25px 10px;
+            }
+            .container h5 {
+                width: 220px;
+                font-family: poppins, sans-serif;
+                font-weight: 100;
+                font-size: 12px;
+            }
+            .profile-pix {
+                width: 70px;
+                height: 70px;
+                border-radius: 50px;
+            }
+            h4,
+            h2,
+            h5,
+            button
+             {
+                margin-top: 20px; 
+                font-family: poppins, sans-serif;
+                font-weight: 600; 
+            }
+            h4 {
+                color: indigo;
+                font-weight: 500;
+            }
+            button {
+                border: none;
+                background-color: indigo;
+                color: whitesmoke;
+                padding: 15px 30px;
+                border-radius: 35px;
+                font-size: 12px;
+            }
+
+        </style>
+    </head>
+    <body>
+       <div class="container">
+       <div class="upper">
+        <img class="profile-pix" src="images/images/images.jpeg" alt="">
+       </div>
+       <div class="lower">
+        <h2>John Doe</h2>
+       <h4> Front End Developer</h4> 
+       <h5>lorem ipsum dolor sit amet, consectetur 
+        adipisicing elit. pariatur corporis comque neque 
+        quibusdam
+       </h5>
+       <button>
+        Veiw Profile
+       </button>
+       </div>
+       </div>
+    </body>
+</html>

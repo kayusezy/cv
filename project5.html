@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            music play
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-image: url(images/images/pattern-background-desktop.svg) ;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-color:hsl(225, 100%, 94%);
+            }
+            .container {
+                background-color: white;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 360px;
+                height: 520px;
+                border-radius: 10px;
+                font-family: Red Hat Display, sans-serif;
+            }
+            .music-pix {
+                width: 360px;
+                border-radius: 10px 10px 0 0;
+            }
+            .head {
+                color: black;
+                font-size: 20px;
+                font-weight: 700;
+            }
+            p {
+                width: 300px;
+                color:hsl(224, 23%, 55%) ;
+                font-weight: 500;
+                
+
+            }
+            .music-bar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;  
+                width: 300px; 
+                background-color:hsl(225, 100%, 98%) ;
+                padding: 10px 15px 10px 15px;
+                border-radius: 10px;
+                font-weight: 700;
+
+            }
+            .music-bars {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            .music-icon {
+                margin-right: 15px;
+            }
+            .payment {
+                color: white;
+                background-color:hsl(245, 75%, 52%) ;
+                border: none;
+                width: 300px;
+                height: 35px;
+                border-radius: 10px;
+                margin-bottom: 25px;
+                box-shadow: 0 20px 10px rgba(205, 205, 245, 0.9);
+                font-family: Red Hat Display, sans-serif;
+                font-weight: 500;
+            }
+            div a {
+                color: hsl(245, 75%, 52%) ;
+            }
+            h3,
+            p,
+            .music-bar,
+            button {
+                margin-top: 20px;
+            }
+            .year {
+                color: hsl(224, 23%, 55%) ;
+            }
+            .order {
+                color: hsl(224, 23%, 55%) ;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="images/images/illustration-hero.svg" alt="" class="music-pix">
+            <p class="head">
+                Order Summary
+            </p>
+            <p>
+                You can now listen to millons of songs&#44;
+                audiobooks&#44; and podcasts on any device
+                anywhere you like&#33;
+            </p>
+            <div class="music-bar">
+                <div class="music-bars">
+                    <img src="images/images/icon-music.svg" alt="" class="music-icon">
+                 <div>
+                    <div>
+                        Annual Plan
+                    </div>
+                    <div class="year">
+                        &#36;59&#46;99&#47;Year
+                    </div>
+                 </div>
+                </div>
+                <div>
+                    <a href="">Change</a>
+                </div>
+            </div>
+            <button class="payment">Proceed to Payment</button>
+            <div class="order">Cancel Order</div>
+        </div>
+        
+    </body>
+</html>

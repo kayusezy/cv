@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Chat app CSS illustration
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+        <style>
+
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color:hsl(270, 20%, 96%) ;
+                font-family: Rubik, sans-serif;
+            }
+            .container {
+                display: flex;
+                align-items: center;
+                
+            }
+            .mobile {
+                border: 10px solid rgb(255, 255, 255);
+                height: 695px;
+                width: 330px;
+                border-radius: 36px;
+                box-shadow: 0 0 20px rgba(216, 208, 208, 0.5);
+                background-color: hsl(270, 20%, 96%);
+                position: relative;
+                margin-right: 200px;
+                user-select: none;
+            }
+            .heading::before {
+                content:"" ;
+                width: 200px;
+                height: 30px;
+                background-color:#fff ;
+                position: absolute;
+                top: -1px;
+                left: 55px;
+                text-align: center;
+                border-radius: 0 0 10px 10px;
+                right: 50px;
+
+            }
+            .heading {
+                display: flex;
+                font-size: 10px;
+                height: 90px;
+                border-radius: 30px 30px 0 0;
+                background: linear-gradient( to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+
+            }
+            .desc {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 60px 20px;
+                color:hsl(276, 100%, 81%);
+                font-size: 14px;
+                position: relative;
+                
+            }
+            .avatar {
+                width: 30px;
+                border-radius: 20px;
+                object-fit: cover;
+                margin-right: 20px;
+                border: 1px solid #fff ;   
+            }
+            .desc-name {
+                font-size: 18px;
+                font-weight: 500;
+                color: #fff;
+            }
+            .status {
+                opacity: 0.8;
+
+            }
+            .dots {
+                position: absolute;
+                background-color: #fff;
+                color: #fff;
+                border-radius: 50%;
+                width: 4px;
+                height: 3px;
+                margin-left: 270px;
+
+            }
+            .dots::before {
+                content: '';
+                position: absolute;
+                background-color: #fff;
+                border-radius: 50%;
+                width: 4px;
+                top: -6px;
+                left: 0px;
+                height: 3px;
+            }
+            .dots::after {
+                content: '';
+                position: absolute;
+                background-color: #fff;
+                border-radius: 50%;
+                width: 4px;
+                top: 6px;
+                left: 0px;
+                height: 3px;
+            }
+            .chevron {
+                position: relative;
+                margin-top: 0;
+                margin-right: 10px;
+
+            }
+            .chevron::before {
+                content: '';
+                position: absolute;
+                top: -8px;
+                left: -7px;
+                width: 3px;
+                height: 9px;
+                background-color: #fff;
+                transform: skew(-28deg,0deg);
+
+            }
+            .chevron::after {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: -7px;
+                width: 3px;
+                height: 9px;
+                background-color: #fff;
+                transform: skew(28deg,0deg);
+            }
+            .text-reply,
+            .text-reply4 {
+                width: 170px;
+                font-size: 11px;
+                background-color:hsl(277, 100%, 91%);
+                padding: 10px;
+                margin: 15px 10px;
+                line-height: 15px;
+                border-radius: 13px 13px 13px 5px;
+                color: hsl(276, 55%, 52%);
+            }
+            .text-reply4 {
+                margin-top: 190px;
+            }
+            .moblie-dog-pic {
+                position: absolute;
+                right: 5px;
+                 
+            }
+            .image-dog {
+                width: 50px;
+                border-radius: 9px;
+                margin: 2px
+            }
+            .text-reply-right1 {
+                position: absolute;
+                right: 10px;
+                top: 300px;
+                width: 155px;
+                font-size: 10px;
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 13px 13px 5px 13px;
+                color: hsl(271, 15%, 43%);
+            }
+            .text-reply-right2 {
+                position: absolute;
+                right: 10px;
+                top: 360px;
+                font-size: 10px;
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 13px 13px 5px 13px;
+                color: hsl(271, 15%, 43%);
+            }
+            .second-part {
+               text-align: left; 
+            }
+            .topic{
+                font-size: 30px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            .goals {
+                width: 420px;
+                font-size: 15px;
+                line-height: 25px;
+                color:  hsl(270, 7%, 64%);
+                
+            }
+            .text-reply2 {
+                display: flex;
+                width: 255px;
+                background: linear-gradient(to right,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+                margin-bottom: 15px;
+                padding: 13px;
+                border-radius: 13px 13px 13px 5px;
+                margin-left: 10px;
+                font-size: 11px;
+                align-items: center;
+                color: #fff;
+                white-space: nowrap;
+            }
+            .form {
+                display: inline-flex;
+            }
+            input {
+                margin-left: 5px;
+                width: 300px;
+                background-color: #fff;
+                border: 1px solid #fff;
+                border-radius: 35px;
+                padding: 18px 25px 15px ;
+                opacity: 0.8;
+                font-size: 15px;
+                font-weight: 700;
+            }
+            input:focus {
+                outline: none;
+            }
+            .type-message::placeholder {
+                color:hsl(206, 6%, 79%) ;
+            }
+            
+            
+            .arrow {
+                background-color:hsl(271, 36%, 24%) ;
+                color: #fff;
+                border-radius: 30px;
+                padding: 5px;
+                font-weight: 700;
+                height: 33px;
+                font-size: 25px;
+                padding: 0 11px;
+                margin-top: 8px;
+                margin-left: -40px;
+                z-index: 20;
+            }
+            .amount {
+                margin-left: 110px;
+                font-size: 19px;
+                text-align: center;
+                font-weight: 700;
+            }
+            .time {
+                margin-left: 10px;
+                opacity: 0.8;
+            }
+            .radio {
+                width: 14px;
+                height: 14px;
+                border: 2px solid #fff;
+                opacity: 0.6;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="container">
+         <main class="mobile">
+           <div class="heading">
+             <div class="desc">
+                <div class="chevron"></div>
+                <img src="images/images/avatar.jpg" alt="" class="avatar">
+               <div>
+                <p class="desc-name">
+                    Samule Green
+                </p>
+                <p class="status">
+                    Avalable to Walk
+                </p>
+               </div>
+               <div class="dots"></div>
+              </div>
+              
+           </div> 
+           
+           <div class="text-reply">
+            That sounds great&#46; I&#39;d be happy with that&#46;
+           </div>
+
+           <div class="text-reply">
+            Could you send over some picture of your dog&#46; please&#63;
+           </div>
+           <div class="moblie-dog-pic">
+            <img src="images/images/dog-image-1.jpg" alt="" class="image-dog">
+            <img src="images/images/dog-image-2.jpg" alt="" class="image-dog">
+            <img src="images/images/dog-image-3.jpg" alt="" class="image-dog">
+           </div>
+           <div class="text-reply-right1">
+            Here are a few picture&#46; She&#39;s a happy girl&#33;
+           </div>
+           <div class="text-reply-right2">
+            Can you make it&#63;
+           </div>
+           <div class="text-reply4">
+            She looks so happy&#33; The time we discussed works&#46;
+            How long shall i take her out for&#63; 
+           </div>
+           <div class="text-reply2">
+            <div class="radio"></div>
+            <p class="time">
+                30 minute
+            </p>
+            <p class="amount">
+                &#36;29 
+            </p>
+           </div>
+           <div class="text-reply2">
+            <div class="radio"></div>
+            <p class="time">
+                1 hour walk 
+            </p>
+            <p class="amount">
+                &#36;49
+            </p>
+           </div>
+           <div class="form">
+            <input type="text" placeholder="Type a message" class="type-message">
+            <p class="arrow">></p>
+           </div>
+         </main>
+
+         <divc class="second-part">
+            <p class="topic">
+                Simple booking
+            </p>
+            <p class="goals">
+                Stay in touch with our dog walkers through the Chat
+                interface&#46; This makes it easy to discuss arrangment and 
+                make booking&#46; Once the walk has been completed you can 
+                rate your walker and book again all through the chat&#46; 
+            </p>
+         </div>
+       </div> 
+    </body>
+</html>

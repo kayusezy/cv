@@ -1,0 +1,88 @@
+
+
+
+body {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.all-project {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+    
+    
+}
+.product-pix {
+    width: 250px;
+    height: 360px;
+    border-radius: 5px 0 0 5px;
+}
+.all-info {
+    width: 210px;
+    height: 360px;
+    text-align: left;
+    background-color: white;
+    padding-left: 25px;
+    border-radius: 0 5px 5px 0;
+    margin-left: -2px;
+
+}
+.product-type {
+font-size: 10px;
+letter-spacing: 5px;
+color: rgba(36, 36, 36, 0.644);
+font-family: Montserrat , arial;
+font-weight: 700;
+padding-top: 10px;
+}
+.product-brand {
+    font-weight: 700;
+    font-size: 25px;
+    width: 180px;
+    font-family: Fraunces, arial;
+    line-height: 25px;
+}
+.product-creator {
+    width: 180px;
+    font-size: 11px;
+    color: rgb(36, 36, 36);
+    opacity: 0.6;
+    font-family: Montserrat , arial;
+    line-height: 17px;
+    font-weight: 700;
+}
+.product-prize {
+    color: rgb(0, 112, 112);
+    font-size: 22px;
+    font-family: Fraunces, arial;
+    display: flex;
+    align-items: center;
+}
+.del-prize {
+    color: rgba(36, 36, 36, 0.6) ;
+    font-size: 11px;
+    margin-left: 20px;
+
+}
+.button-info {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 112, 112);
+    font-family: Montserrat , arial; 
+    font-size: 11px;
+    color: white;
+    padding: 7px 50px 7px 50px;
+    border: none;
+    border-radius: 5px;
+    
+
+}
+.cart-img {
+    width: 20px ;
+    margin-right: 5px;
+}

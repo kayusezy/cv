@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            profile card component
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url(images/images/bg-pattern-top.svg),
+                url(images/images/bg-pattern-bottom.svg);
+                background-position: top 180% right 180%,
+                bottom 180% left 180% ;
+                background-repeat: no-repeat;
+                background-color:hsl(185, 75%, 39%) ;
+                
+                
+            }
+            .container {
+                background-color: white;
+                text-align: center;
+                height: 340px;
+                width: 300px;
+                border-radius: 15px 15px 15px 15px;
+                font-family: Kumbh Sans, sans-serif;
+                box-shadow: 0 0 5px rgba(2, 66, 95, 0.8),
+                 inset 0 0 5px rgba(106, 111, 114, 0.8);
+            }
+            .top-card {
+                position: relative;
+            }
+            .card-top {
+                border-radius: 15px 15px 0 0;
+                width: 300px;
+                box-shadow: 0 0 5px rgba(189, 183, 183, 0.8),
+                 inset 0 0 5px rgba(218, 208, 208, 0.8);
+            }
+            .card-pix {
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, 0);
+                border-radius: 50px;
+                border: 3px solid #fff;
+                box-shadow: 0 0 5px rgba(189, 183, 183, 0.8),
+                 inset 0 0 5px rgba(189, 183, 183, 0.8);
+
+            }
+            .name {
+                margin-top: 60px;
+                color: hsl(0, 0%, 59%);
+                font-family: Kumbh Sans, sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+            }
+            .name strong {
+                color: black;
+                font-family: Kumbh Sans, sans-serif;
+                font-weight: 700;
+                font-size: 18px;
+            }
+            .location {
+                margin-top: 10px;
+                color: hsl(0, 0%, 59%);
+                font-family: Kumbh Sans, sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+            }
+            hr {
+                margin-top: 20px;
+                border-top: 1px solid hsl(0, 6%, 90%);
+            }
+            .rates {
+                display: flex;
+                justify-content: center;
+            }
+            .rates div {
+                margin: 25px;
+                font-family: Kumbh Sans, sans-serif;
+                font-weight: 700;
+            }
+            .rep {
+                font-size: 10px;
+                color: hsl(0, 0%, 59%);
+                font-family: Kumbh Sans, sans-serif;
+                font-weight: 400;
+            }
+
+        </style>
+    </head>
+    <body>
+       <div class="container">
+        <div class="top-card">
+            <img src="images/images/bg-pattern-card.svg" alt="" class="card-top">
+            <div>
+                <img src="images/images/image-victor.jpg" alt="" class="card-pix">
+            </div>
+        </div>
+        <p class="name">
+            <strong>Victor Crest</strong> 26
+        </p>
+        <p class="location">
+            London
+        </p>
+        <hr>
+        <div class="rates">
+            <div>
+                <p class="number">
+                    80K
+                </p>
+                <p class="rep">
+                    Followers
+                </p>
+            </div>
+            <div>
+                <p class="number">
+                    803K
+                </p>
+                <p class="rep">
+                    Likes
+                </p>
+            </div>
+            <div>
+                <p class="number">
+                    1&#46;4K
+                </p>
+                <p class="rep">
+                    Photos
+                </p>
+            </div>
+        </div>
+       </div> 
+    </body>
+</html>

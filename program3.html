@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>
+            project 3
+        </title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .container {
+                text-align: center;
+                width: 250px;
+                border-radius: 10px;
+                height: 350px;
+                box-shadow: 0 0 10px rgba(231, 231, 231, 0.5);
+                background: linear-gradient(rgb(151, 151, 151) ,white 50%);
+
+                
+            }
+            .profile-pix {
+                border-radius: 50%;
+                width: 55px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: white;
+                box-shadow: 0 0 10px rgba(231, 231, 231, 0.7);
+            }
+            div img, 
+            h3,
+            p,
+            input {
+                margin-top: 20px;
+            }
+            .options {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 5px 0 5px;
+                margin-top: -10px;
+            }
+            .logos img {
+                margin: 5px 5px -5px 5px ;
+                box-shadow: 0 0 10px rgba(231, 231, 231, 0.5);
+                border-color: white;
+                transition: 0.15s ease-out;
+                padding: 10px;
+                border-radius: 50%;
+                
+            }
+            .logos img:hover {
+                box-shadow: inset 2px 2px 5px rgb(183, 183, 183), inset -2px -2px 5px #fff ;
+            }
+            input {
+                margin: 20px 5px 20px 5px ;
+                box-shadow: 0 0 10px rgba(252, 252, 252, 0.5);
+                border-color: white;
+                transition: 0.15s ease-out;
+                padding: 5px 10px;
+                border: none;
+            }
+            input:hover {
+                box-shadow: inset 2px 2px 5px rgb(183, 183, 183), inset -2px -2px 5px #fff ;
+            }
+            .comm-sec img {
+                margin: 0px 10px 0px 10px;
+                text-align: center;
+            }
+            
+
+
+        </style>
+    </head>
+    <body>
+       
+        <div class="container">
+            <div class="options">
+                <img src="images/images/back.png" alt="">
+                <img src="images/images/options.png" alt="">
+            </div>
+            <img src="images/images/download.jpeg" alt="images" class="profile-pix">
+           <h3>
+            Jone Smith
+           </h3>
+           <p>Web Developer and Designer</p>
+           <div class="logos">
+            <img src="images/images/facebook.png" alt="png1">
+            <img src="images/images/twitter.png" alt="png2">
+            <img src="images/images/instagram.png" alt="png3">
+            <img src="images/images/youtube.png" alt="png4">
+           </div>
+           <input type="button" class="button" value="Messages" >
+           <input type="button" class="button" value="Subscribe">
+           <div class="comm-sec">
+            <img src="images/images/heart.png" alt="">462k
+            <img src="images/images/speech-bubble.png" alt="">173k
+            <img src="images/images/continue.png" alt="">148
+           </div>
+        </div>
+    </body>
+</html>
